@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>PyDen Technologies™</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-flex flex-wrap">
+                    <a href="#" class="text-muted small me-4"><i
+                            class="fas fa-map-marker-alt text-primary me-2"></i>Encontre nosso Escritório</a>
+                    <a href="https://wa.me/5594991284788" class="text-muted small me-4"><i
+                            class="fas fa-phone-alt text-primary me-2"></i>+55 94 99128-4788 </a>
+                    <a href="mailto:example@gmail.com" class="text-muted small me-0"><i
+                            class="fas fa-envelope text-primary me-2"></i>contato@pydentech.com</a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="#about" class="nav-item nav-link">Quem Somos</a>
+                    <a href="#services" class="nav-item nav-link">Nossos Serviços</a>
+                    <!-- <a href="#blog" class="nav-item nav-link">Blogs</a> -->
+                    <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Entre
+                    em Contato</a>
+            </div>
+        </nav>
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row gy-0 gx-5">
+                            <div class="col-lg-0 col-xl-5"></div>
+                            <div class="col-xl-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-end">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">PyDen Technologies™</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Inovação para um futuro melhor
+                                    </h1>
+                                    <p class="mb-5 fs-5">
+                                        Soluções personalizadas em tecnologia para impulsionar o crescimento do seu
+                                        negócio.
+                                        Conectamos você ao que há de mais avançado em segurança digital, cloud computing
+                                        e IA.
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i
+                                                class="fas fa-play-circle me-2"></i> Ver Vídeo</a>
+                                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Saiba
+                                            Mais</a>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                        <div class="d-flex justify-content-end ms-2">
+                                            <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-carousel-item">
+                <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-12 animated fadeInUp">
+                                <div class="text-center">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">PyDen Technologies™</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Transformando ideias em
+                                        realidade</h1>
+                                    <p class="mb-5 fs-5">
+                                        Oferecemos tecnologia de ponta, desde inteligência artificial até soluções de
+                                        automação
+                                        empresarial, garantindo eficiência e crescimento contínuo para o seu negócio.
+                                    </p>
+                                    <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i
+                                                class="fas fa-play-circle me-2"></i> Ver Vídeo</a>
+                                        <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Saiba
+                                            Mais</a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex justify-content-end ms-2">
+                                            <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5" id="about">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary">Sobre Nós</h4>
+                        <h1 class="display-5 mb-4">Conheça nossa empresa e descubra oportunidades únicas</h1>
+                        <p class="mb-4">
+                            Na PyDen Technologies™, oferecemos soluções tecnológicas inovadoras e personalizadas para
+                            empresas de todos os portes. Nossa missão é transformar desafios em oportunidades de
+                            crescimento, impulsionando negócios com segurança, automação e inovação.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="d-flex">
+                                    <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                                    <div class="ms-4">
+                                        <h4>Consultoria Empresarial</h4>
+                                        <p>Fornecemos insights estratégicos e expertise em transformação digital para
+                                            aumentar sua competitividade.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <div class="d-flex">
+                                    <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                                    <div class="ms-4">
+                                        <h4>Anos de Experiência</h4>
+                                        <p>Com anos de experiência no setor, garantimos soluções robustas e escaláveis
+                                            para seu negócio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Descubra
+                                    Agora</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex">
+                                    <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Ligue para Nós</h4>
+                                        <a href="https://wa.me/5594991284788">
+                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+55 94 99128-4788</p>
+                                        </a>
+                                    </div><br><br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-primary rounded position-relative overflow-hidden">
+                        <img src="img/about-2.png" class="img-fluid rounded w-100" alt="Sobre a empresa">
+
+                        <div class="" style="position: absolute; top: -15px; right: -15px;">
+                            <img src="img/about-3.png" class="img-fluid"
+                                style="width: 150px; height: 150px; opacity: 0.7;" alt="">
+                        </div>
+                        <div class="rounded-bottom">
+                            <img src="img/about-5.jpg" class="img-fluid rounded-bottom w-100" alt="PyDen Technologies™">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Services Start -->
+    <div id="services">
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossos Serviços</h4>
+                    <h1 class="display-5 mb-4">Soluções Tecnológicas Personalizadas para o Seu Negócio</h1>
+                    <p class="mb-0">
+                        Na PyDen Technologies™, oferecemos uma gama de serviços especializados, projetados para atender
+                        às
+                        necessidades exclusivas de cada cliente. Nossas soluções são inovadoras, seguras e otimizadas
+                        para o
+                        sucesso do seu negócio.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <!-- Service 1: Sistema de Gestão de Transporte -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Sistema de Gestão de Transporte">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Sistema de Gestão de Transporte</a>
+                                <p class="mb-4">Otimização e controle total da sua frota com um sistema eficiente de
+                                    gestão
+                                    de transporte. Simplifique suas operações e aumente a produtividade.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2: Desenvolvimento de Sistemas Sob Demanda -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Desenvolvimento de Sistemas Sob Demanda">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Desenvolvimento de Sistemas Sob Demanda</a>
+                                <p class="mb-4">Criamos soluções sob medida, adaptadas às necessidades específicas do
+                                    seu
+                                    negócio, garantindo máxima eficiência e performance.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3: Integração de Servidores e APIs -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Integração de Servidores e APIs">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Integração de Servidores e APIs</a>
+                                <p class="mb-4">Conecte seu sistema a diversos serviços e plataformas, com integração de
+                                    APIs e servidores robustos e seguros para garantir alta disponibilidade.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4: Rastreamento Veicular -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Rastreamento Veicular">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Rastreamento Veicular Personalizado</a>
+                                <p class="mb-4">Oferecemos soluções avançadas de rastreamento de veículos, com
+                                    monitoramento
+                                    em tempo real e controle total sobre sua frota.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5: Automação de Processos -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Automação de Processos">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Automação de Processos</a>
+                                <p class="mb-4">Automatize tarefas repetitivas e otimize seus processos internos com
+                                    soluções inovadoras que aumentam a eficiência e reduzem custos.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 6: Segurança da Informação -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100"
+                                    alt="Segurança da Informação">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Segurança da Informação</a>
+                                <p class="mb-4">Proteja seus dados e sistemas com nossas soluções de segurança da
+                                    informação, garantindo a confidencialidade e integridade de suas operações.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid feature pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossas Soluções</h4>
+                    <h1 class="display-5 mb-4">Conectando empresas, tecnologia e inovação para resultados
+                        extraordinários
+                    </h1>
+                    <p class="mb-0">
+                        Na PyDen Technologies™, entregamos soluções tecnológicas que transformam a maneira como os
+                        negócios
+                        operam. Nossas ferramentas são projetadas para trazer eficiência, segurança e flexibilidade,
+                        adaptando-se às necessidades específicas de cada cliente.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <!-- Feature 1: Gestão Centralizada -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-tachometer-alt fa-4x text-primary"></i>
+                            </div>
+                            <h4>Gestão Centralizada</h4>
+                            <p class="mb-4">Controle e gerencie todas as suas operações em um único painel integrado,
+                                com
+                                visibilidade total e otimização de processos.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <!-- Feature 2: Integração Ágil -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-link fa-4x text-primary"></i>
+                            </div>
+                            <h4>Integração de APIs</h4>
+                            <p class="mb-4">Conecte suas aplicações com nossas soluções de integração de APIs,
+                                garantindo que todos os seus sistemas trabalhem em sinergia.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <!-- Feature 3: Segurança Avançada -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-shield-alt fa-4x text-primary"></i>
+                            </div>
+                            <h4>Segurança Avançada</h4>
+                            <p class="mb-4">Proteja seus dados e operações com nossas soluções de segurança de última
+                                geração, com total confiança e proteção.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <!-- Feature 4: Soluções Escaláveis -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-expand-alt fa-4x text-primary"></i>
+                            </div>
+                            <h4>Soluções Escaláveis</h4>
+                            <p class="mb-4">Nossas plataformas são flexíveis e crescem com o seu negócio, garantindo
+                                performance consistente mesmo em alta demanda.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">O Que Oferecemos</h4>
+                    <h1 class="display-5 mb-4">Benefícios Exclusivos Para Impulsionar Seu Negócio</h1>
+                    <p class="mb-0">
+                        Na PyDen Technologies™, não oferecemos apenas serviços, mas soluções estratégicas que garantem
+                        resultados de alto impacto. Nossa equipe está pronta para levar seu negócio ao próximo nível,
+                        com
+                        tecnologia de ponta e atendimento personalizado.
+                    </p>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="nav nav-pills bg-light rounded p-5">
+                            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                                <h5 class="mb-0">Soluções de Automação Inteligente</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                                <h5 class="mb-0">Segurança Total para Seus Dados</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                                <h5 class="mb-0">Desenvolvimento Sob Medida</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+                                <h5 class="mb-0">Integração Completa de APIs e Sistemas</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-1.png" class="img-fluid w-100 rounded"
+                                            alt="Automação Inteligente">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Automação Inteligente</h1>
+                                        <p class="mb-4">Nossas soluções de automação transformam seus processos,
+                                            reduzindo
+                                            custos e eliminando ineficiências, enquanto aumentam a produtividade e o
+                                            controle sobre suas operações.</p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-2.png" class="img-fluid w-100 rounded"
+                                            alt="Segurança Total de Dados">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Segurança Total de Dados</h1>
+                                        <p class="mb-4">Proteja suas informações mais valiosas com nossas soluções
+                                            robustas
+                                            de segurança, que garantem a integridade e confidencialidade de todos os
+                                            seus
+                                            dados.</p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-3.png" class="img-fluid w-100 rounded"
+                                            alt="Desenvolvimento Sob Medida">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Desenvolvimento Sob Medida</h1>
+                                        <p class="mb-4">Cada empresa é única, e assim também são nossas soluções.
+                                            Criamos
+                                            sistemas personalizados que atendem exatamente às suas necessidades,
+                                            garantindo
+                                            eficiência e flexibilidade.</p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-4.png" class="img-fluid w-100 rounded"
+                                            alt="Integração Completa de APIs e Sistemas">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Integração Completa</h1>
+                                        <p class="mb-4">A integração rápida e segura entre seus sistemas e APIs é
+                                            essencial
+                                            para o sucesso. Garantimos que tudo funcione em perfeita harmonia,
+                                            facilitando
+                                            sua operação diária.</p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Saiba Mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+    <!-- Blog Start -->
+    <!--     <div class="container-fluid blog pb-5" id="blog">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Nosso Blog & Notícias</h4>
+                <h1 class="display-5 mb-4">Artigos e Dicas para Especialistas em Tecnologia</h1>
+                <p class="mb-0">Fique por dentro das últimas novidades e tendências do setor de tecnologia. Descubra
+                    conteúdos exclusivos sobre desenvolvimento de software, consultoria em TI, soluções
+                    personalizadas e
+                    muito mais. Acompanhe nossas atualizações e prepare-se para levar sua empresa ao próximo nível.
+                </p>
+            </div>
+            <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item p-4">
+                    <div class="blog-img mb-4">
+                        <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="">
+                        <div class="blog-title">
+                            <a href="#" class="btn">Desenvolvimento de Software</a>
+                        </div>
+                    </div>
+                    <a href="#" class="h4 d-inline-block mb-3">Como Personalizar Soluções para Atender às
+                        Necessidades
+                        do Cliente?</a>
+                    <p class="mb-4">Entenda como adaptar softwares para atender demandas específicas, agregando
+                        valor
+                        com soluções sob medida e mantendo a competitividade no mercado...</p>
+                    <div class="d-flex align-items-center">
+                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle"
+                            style="width: 60px; height: 60px;" alt="">
+                        <div class="ms-3">
+                            <h5>Admin</h5>
+                            <p class="mb-0">19 de outubro, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-4">
+                    <div class="blog-img mb-4">
+                        <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="">
+                        <div class="blog-title">
+                            <a href="#" class="btn">Consultoria em TI</a>
+                        </div>
+                    </div>
+                    <a href="#" class="h4 d-inline-block mb-3">Transformação Digital: Por Onde Começar?</a>
+                    <p class="mb-4">A transformação digital é essencial para a evolução das empresas. Descubra os
+                        primeiros passos para implementar uma estratégia de TI eficiente e os benefícios que ela
+                        pode
+                        trazer...</p>
+                    <div class="d-flex align-items-center">
+                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle"
+                            style="width: 60px; height: 60px;" alt="">
+                        <div class="ms-3">
+                            <h5>Admin</h5>
+                            <p class="mb-0">19 de outubro, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-4">
+                    <div class="blog-img mb-4">
+                        <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="">
+                        <div class="blog-title">
+                            <a href="#" class="btn">Segurança da Informação</a>
+                        </div>
+                    </div>
+                    <a href="#" class="h4 d-inline-block mb-3">A Importância da Segurança em Aplicações Web</a>
+                    <p class="mb-4">Saiba como proteger seus sistemas e dados, evitando vulnerabilidades comuns em
+                        aplicações web e adotando boas práticas de segurança...</p>
+                    <div class="d-flex align-items-center">
+                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle"
+                            style="width: 60px; height: 60px;" alt="">
+                        <div class="ms-3">
+                            <h5>Admin</h5>
+                            <p class="mb-0">19 de outubro, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-4">
+                    <div class="blog-img mb-4">
+                        <img src="img/service-4.jpg" class="img-fluid w-100 rounded" alt="">
+                        <div class="blog-title">
+                            <a href="#" class="btn">Treinamento em TI</a>
+                        </div>
+                    </div>
+                    <a href="#" class="h4 d-inline-block mb-3">Capacitação de Equipes: O Futuro da Tecnologia</a>
+                    <p class="mb-4">Investir em treinamentos pode transformar a eficiência e o conhecimento das
+                        equipes
+                        de TI. Veja como manter a equipe sempre atualizada e preparada para os desafios do setor...
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle"
+                            style="width: 60px; height: 60px;" alt="">
+                        <div class="ms-3">
+                            <h5>Admin</h5>
+                            <p class="mb-0">19 de outubro, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid faq-section pb-5">
+        <div class="container pb-5 overflow-hidden">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">FAQs</h4>
+                <h1 class="display-5 mb-4">Perguntas Frequentes</h1>
+                <p class="mb-0">Confira as perguntas mais frequentes sobre nossos serviços de desenvolvimento de
+                    software, consultoria em TI e soluções tecnológicas. Se você não encontrar o que procura, entre
+                    em
+                    contato conosco para mais informações.</p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+                        <div class="accordion-item rounded-top">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed rounded-top" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    O que a PyDen Technologies™ faz?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">A PyDen Technologies™ é especializada no desenvolvimento
+                                    de
+                                    software sob medida, licenciamento de programas, consultoria em TI, e prestação
+                                    de
+                                    serviços tecnológicos personalizados, atendendo às necessidades de empresas de
+                                    diversos setores.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Quais são os benefícios do desenvolvimento de software personalizado?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">O desenvolvimento de software personalizado permite que
+                                    as
+                                    soluções sejam adaptadas especificamente para as necessidades da sua empresa,
+                                    garantindo maior eficiência, integração com sistemas existentes e flexibilidade
+                                    para
+                                    futuras mudanças.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    A PyDen oferece serviços de manutenção e suporte técnico?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">Sim, oferecemos serviços de suporte técnico, manutenção
+                                    de
+                                    sistemas e atualizações periódicas para garantir que suas soluções tecnológicas
+                                    funcionem de forma eficiente e segura.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Quais são os principais setores atendidos pela PyDen?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">Atendemos uma ampla variedade de setores, incluindo
+                                    saúde,
+                                    educação, comércio, indústria e serviços financeiros, fornecendo soluções
+                                    tecnológicas sob medida para cada área.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Como posso solicitar uma consultoria em TI?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">Para solicitar uma consultoria, entre em contato conosco
+                                    por
+                                    meio do nosso formulário de contato, telefone ou e-mail. Nossa equipe entrará em
+                                    contato para entender suas necessidades e oferecer a melhor solução.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item rounded-bottom">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    A PyDen oferece treinamento em tecnologia?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
+                                <div class="accordion-body">Sim, oferecemos treinamento em informática e capacitação
+                                    em
+                                    tecnologias específicas, ajudando a manter sua equipe atualizada com as mais
+                                    recentes práticas e ferramentas do mercado.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-primary rounded">
+                        <img src="img/about-2.png" class="img-fluid w-100" alt="Sobre a PyDen Technologies™">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Depoimentos</h4>
+                <h1 class="display-5 mb-4">Opinião dos Nossos Clientes</h1>
+                <p class="mb-0">Veja o que nossos clientes têm a dizer sobre a PyDen Technologies™ e como nossas
+                    soluções
+                    tecnológicas ajudaram a transformar suas operações e alcançar melhores resultados.</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-1.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">"A PyDen Technologies™ desenvolveu uma solução personalizada para gerenciar
+                            nossos processos educacionais, e isso tem feito toda a diferença. A equipe é
+                            extremamente
+                            profissional e sempre disponível para suporte técnico."</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Tiago Cordeiro</h4>
+                            <p class="mb-0">Gestor Financeiro da Secretaria Municipal de Educação</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-2.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">"Implementamos as soluções de tecnologia da PyDen na Secretaria de Canaã dos
+                            Carajás, e o impacto foi imediato. A plataforma melhorou significativamente nossa
+                            eficiência
+                            e a segurança dos nossos dados."</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Thais Dandarah</h4>
+                            <p class="mb-0">Gestora do Setor de Tecnologia da Secretaria Municipal de Educação de
+                                Canaã
+                                dos Carajás</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-3.jpeg" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">"A parceria com a PyDen nos ajudou a modernizar nossos sistemas internos e
+                            melhorar o atendimento aos nossos clientes. As soluções de software são intuitivas e de
+                            alta
+                            qualidade."</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Jefferson Renan</h4>
+                            <p class="mb-0">Diretor de Operações, Locan Transportes LTDA</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-3.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">"Estamos muito satisfeitos com o trabalho da PyDen. Eles nos ajudaram a
+                            melhorar nossa infraestrutura de rastreamento e a implementar soluções que realmente agregam valor ao
+                            nosso negócio."</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Ivonice</h4>
+                            <p class="mb-0">Diretora Financeira, Talisma Ltda.</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-quote-left">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                    </div>
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-4.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="mb-0">"A equipe da PyDen é fantástica. A qualidade e o suporte que recebemos são
+                            incomparáveis, e as soluções são sempre entregues dentro do prazo."</p>
+                    </div>
+                    <div class="testimonial-title">
+                        <div>
+                            <h4 class="mb-0">Juscelino Alves</h4>
+                            <p class="mb-0">CEO, JP Auto Eletrica e Serviços</p>
+                        </div>
+                        <div class="d-flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote-right">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgba(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0" style="max-width: 150px;">
+                            <img src="img/logo.png" alt="Logo" style="max-width: 150px; height: auto;">
+                        </a>
+                        <p class="mb-4">A PyDen Technologies™ é especializada em soluções tecnológicas, oferecendo
+                            desenvolvimento de software sob medida, consultoria em TI e serviços de suporte técnico
+                            para
+                            empresas de todos os portes.</p>
+                        <div class="d-flex">
+                            <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                <i class="fas fa-apple-alt text-white"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Disponível na</small>
+                                    <h6 class="text-white">App Store</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                <i class="fas fa-play text-primary"></i>
+                                <div class="ms-3">
+                                    <small class="text-white">Baixe no</small>
+                                    <h6 class="text-white">Google Play</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Links Rápidos</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Sobre Nós</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Nossos Serviços</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Consultoria em TI</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Suporte Técnico</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contato</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Suporte</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Política de Privacidade</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Termos & Condições</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Central de Ajuda</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Documentação</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Suporte Técnico</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Informações de Contato</h4>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0"> Rua das Hortaliças, Qd 18 Lt 20, Jardim América, Canaã dos Carajás – PA, Brasil, CEP 68366-433 </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">contato@pyden.com.br</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(+55) 94 99128-4788</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fab fa-firefox-browser text-primary me-3"></i>
+                            <p class="text-white mb-0">www.pyden.tech.br</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-facebook-f text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-twitter text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    class="fab fa-instagram text-white"></i></a>
+                            <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                    class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="index.html" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>PyDen Technologies™</a>, Todos os
+                        direitos
+                        reservados.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    Desenvolvido por <a class="border-bottom text-white" href="https://pyden.com.br">PyDen
+                        Technologies™</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
