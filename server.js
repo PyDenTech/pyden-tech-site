@@ -34,15 +34,16 @@ app.post('/api/contact', async (req, res) => {
 
   // Configurar o transporter do Nodemailer
   let transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,             // ex. smtp.hostinger.com
-    port: Number(process.env.EMAIL_PORT),      // 587 ou 465
-    secure: process.env.EMAIL_PORT == '465',   // true se for 465 (SSL), false se for 587 (STARTTLS)
+    host: process.env.EMAIL_HOST,
+    port: Number(process.env.EMAIL_PORT),
+    secure: process.env.EMAIL_PORT == '465',
     auth: {
-      user: process.env.EMAIL_USER,            // contato@pydenexpress.com
+      user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS
-    }
+    },
+    logger: true,
+    debug: true
   });
-
 
   // Configurar o email
   let mailOptions = {
@@ -76,14 +77,15 @@ app.post('/api/contact', async (req, res) => {
     `
   };
 
-
   // Enviar o email
   try {
-    await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Mensagem enviada com sucesso!' });
-  } catch (error) {
-    console.error('Erro ao enviar email:', error);
-    res.status(500).json({ error: 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.' });
+    let info = await transporter.sendMail(mailOptions);
+    console.log('✅ Mensagem enviada. messageId:', info.messageId);
+    console.log('✔ Resposta do servidor:', info.response);
+    return res.status(200).json({ message: 'Mensagem enviada com sucesso!' });
+  } catch (err) {
+    console.error('❌ Erro ao enviar email:', err);
+    return res.status(500).json({ error: 'Erro ao enviar. Tente mais tarde.' });
   }
 });
 
