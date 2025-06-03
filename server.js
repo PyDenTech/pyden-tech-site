@@ -34,19 +34,21 @@ app.post('/api/contact', async (req, res) => {
 
   // Configurar o transporter do Nodemailer
   let transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: process.env.EMAIL_PORT,
-    secure: process.env.EMAIL_PORT == 465,
+    host: process.env.EMAIL_HOST,             // ex. smtp.hostinger.com
+    port: Number(process.env.EMAIL_PORT),      // 587 ou 465
+    secure: process.env.EMAIL_PORT == '465',   // true se for 465 (SSL), false se for 587 (STARTTLS)
     auth: {
-      user: process.env.EMAIL_USER,
+      user: process.env.EMAIL_USER,            // contato@pydenexpress.com
       pass: process.env.EMAIL_PASS
     }
   });
 
+
   // Configurar o email
   let mailOptions = {
-    from: `"${name}" <${email}>`, // Remetente
-    to: process.env.EMAIL_USER, // Destinatário (seu email)
+    from: `"${name}" <${process.env.EMAIL_USER}>`,  // obrigatoriamente contato@pydenexpress.com
+    replyTo: email,                                 // e-mail do usuário que preencheu o formulário
+    to: process.env.EMAIL_USER,                     // destinatário (seu e-mail)
     subject: subject,
     text: `
       Você recebeu uma nova mensagem do formulário de contato:
@@ -73,6 +75,7 @@ app.post('/api/contact', async (req, res) => {
       <p>${message}</p>
     `
   };
+
 
   // Enviar o email
   try {
