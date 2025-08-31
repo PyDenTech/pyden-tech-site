@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard | PyDen Tech</title>
+    <style>
+        :root {
+            --bg: #0b1020;
+            --card: #0f172a;
+            --fg: #e5e7eb;
+            --muted: #a1a1aa;
+            --pri: #06b6d4;
+            --ok: #10b981;
+            --bd: #1f2937
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, Segoe UI, Roboto, Arial;
+            background: var(--bg);
+            color: var(--fg)
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--bd);
+            background: #0d1428;
+            position: sticky;
+            top: 0
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: .4px
+        }
+
+        .btn {
+            background: var(--pri);
+            color: #fff;
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 14px;
+            cursor: pointer
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            padding: 22px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 16px;
+            padding: 18px
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 6px
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #23314f;
+            background: #0b1220;
+            color: #e5e7eb
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 14px
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #22324e;
+            font-size: .95rem
+        }
+
+        .mono {
+            font-family: ui-monospace, Menlo, Consolas, monospace
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border: 1px solid #1f3b4c;
+            border-radius: 999px;
+            background: #0b2030;
+            font-size: .82rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .ok {
+            color: var(--ok)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">PyDen • Admin</div>
+        <form id="logoutForm" method="post" action="/admin/logout">
+            <button class="btn" type="submit">Sair</button>
+        </form>
+    </header>
+
+    <main class="grid">
+        <section class="card">
+            <h2>Gerar QR Code</h2>
+            <form id="qrForm">
+                <label for="tipo">Tipo</label>
+                <select id="tipo" required>
+                    <option value="contratos">Contratos</option>
+                    <option value="orcamentos">Orçamentos</option>
+                    <option value="propostas">Propostas</option>
+                </select>
+
+                <label for="given_id">ID único (visível no documento)</label>
+                <input id="given_id" placeholder="Ex.: P/2025-00017" required />
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3" placeholder="Título do documento ou resumo curto" required></textarea>
+
+                <button class="btn" type="submit">Gerar QR</button>
+            </form>
+            <div id="result" style="margin-top:14px"></div>
+        </section>
+
+        <section class="card">
+            <h2>Registros Recentes</h2>
+            <div class="muted">Até 200 últimos registros. Use busca para filtrar.</div>
+            <div style="margin-top:10px;display:flex;gap:10px">
+                <input id="search" placeholder="Buscar por descrição/ID/uid" />
+                <button class="btn" id="btnBuscar" type="button">Buscar</button>
+            </div>
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>UID</th>
+                        <th>Criado</th>
+                        <th>QR</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>
