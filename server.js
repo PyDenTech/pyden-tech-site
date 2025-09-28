@@ -127,6 +127,11 @@ app.get('/admin/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin', 'login.html'));
 });
 
+// --- Política de Privacidade ---
+app.get(['/privacy', '/privacy-policy', '/privacidade', '/politica-de-privacidade'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'privacy.html'));
+});
+
 app.post('/admin/login', authLimiter, (req, res) => {
   const { email, password } = req.body || {};
   if (!email || !password) {
