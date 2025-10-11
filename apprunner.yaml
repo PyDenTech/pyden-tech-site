@@ -1,0 +1,34 @@
+version: 1.0
+runtime: nodejs22
+
+build:
+  # Variáveis disponíveis nas fases pre-build/build/post-build
+  env:
+    - name: npm_config_build_from_source
+      value: "false"
+  commands:
+    # sqlite3 precisa de toolchain em build
+    pre-build:
+      - yum install -y gcc-c++ make python3 sqlite sqlite-devel
+    build:
+      - npm ci --omit=dev
+
+run:
+  # Opcional: fixar versão de runtime
+  # runtime-version: 22.14.0
+  command: node server.js
+  network:
+    # Seu app escuta 4000 (server.js). App Runner repassa também em PORT.
+    port: 4000
+    env: APP_PORT
+  env:
+    - name: NODE_ENV
+      value: production
+    - name: BASE_URL
+      value: "https://pydentech.com" # ajuste após domínio custom
+  # Use segredos do Secrets Manager ou parâmetros do SSM para não expor credenciais
+  secrets:
+    - name: SESSION_SECRET
+      value-from: arn:aws:secretsmanager:us-east-1:ACCOUNT_ID:secret:SESSION_SECRET-xxxxx
+    - name: EMAIL_PASS
+      value-from: arn:aws:secretsmanager:us-east-1:ACCOUNT_ID:secret:EMAIL_PASS-xxxxx
